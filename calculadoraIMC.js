@@ -17,17 +17,23 @@ resultado.value = resultado
 const calculoIMC = (peso / (altura * altura)).toFixed(1)
 
 if (calculoIMC < 18.5){
-    resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está abaixo do peso!"
+    //resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está abaixo do peso!"
+    resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está abaixo do peso!`
     } else if(calculoIMC <25){
-        resultado.innerHTML = nome + ", seu IMC é: " +  calculoIMC + "! Você está com peso ideal!"
+        //resultado.innerHTML = nome + ", seu IMC é: " +  calculoIMC + "! Você está com peso ideal!"
+        resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está com peso ideal!`
     } else if(calculoIMC <30){
-        resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está acima do peso!"
+        //resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está acima do peso!"
+        resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está acima do peso!`
     } else if(calculoIMC <35){
-        resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está muito acima do peso!"
+        //resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está muito acima do peso!"
+        resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está muito acima do peso!`
     }else if(calculoIMC <40){
-        resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está com obesidade!"
+        //resultado.innerHTML = nome +  ", seu IMC é: " + calculoIMC + "! Você está com obesidade!"
+        resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está com obesidade!`
     }else if(calculoIMC <45){
-        resultado.innerHTML = nome + ", seu IMC é: " + calculoIMC + "! Você está com obesidade!"
+        //resultado.innerHTML = nome + ", seu IMC é: " + calculoIMC + "! Você está com obesidade!"
+        resultado.innerHTML = `${nome}, seu IMC é: ${calculoIMC}! Você está com obesidade!`
     }
 
 }
